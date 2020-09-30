@@ -78,7 +78,11 @@ function handleButton(elem){
         case "4":
 			lizardSamples++;
 			document.getElementById("lizardsamples").innerText = "Lizard samples:" + lizardSamples;
-			break;		
+			break;	
+		case "5":
+			noSample++;
+			document.getElementById("nonesamples").innerText = "Wrong Samples" + noSample;
+			break;
   
         // Add a case for lizard samples.
         // HINT: Look at the previous cases.
@@ -119,6 +123,9 @@ async function predict() {
         case 4:
 			predictionText = "I see Lizard";
 			break;
+	    case 5:
+		    predictionText = "You are joking with me?";
+		    break;
             
         // Add a case for lizard samples.
         // HINT: Look at the previous cases.
